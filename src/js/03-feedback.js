@@ -1,4 +1,4 @@
-// import throttle from 'lodash.throttle';
+import throttle from 'lodash.throttle';
 
 const KEY = 'feedback-form-state';
 const formData = {};
