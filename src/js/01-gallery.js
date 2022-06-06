@@ -6,31 +6,31 @@ import { galleryItems } from './gallery-items';
 
 // ------------ Create and render markup according to gallery template. --------------
 
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
+// import SimpleLightbox from 'simplelightbox';
+// import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const createGalleryItemMarkup = ({ preview, original, description }) => {
-  return `
-    <li>
-    <a clsss = "gallery__item" href = "${original}">
-    <img class = "gallery__image"
-    src = "${preview}"
-    alt = "${description}"
-    />
-    </a>
-    </li>`;
-};
+// const createGalleryItemMarkup = ({ preview, original, description }) => {
+//   return `
+//     <li>
+//     <a clsss = "gallery__item" href = "${original}">
+//     <img class = "gallery__image"
+//     src = "${preview}"
+//     alt = "${description}"
+//     />
+//     </a>
+//     </li>`;
+// };
 
-const createGalleryMarkup = galleryItems.map(createGalleryItemMarkup).join('');
+// const createGalleryMarkup = galleryItems.map(createGalleryItemMarkup).join('');
 
-const galleryElements = document.querySelector('.gallery');
+// const galleryElements = document.querySelector('.gallery');
 
-galleryElements.insertAdjacentHTML('beforeend', createGalleryMarkup);
+// galleryElements.insertAdjacentHTML('beforeend', createGalleryMarkup);
 
-// ------ Add caption display to image from alt attribute according to the code from the library (SimpleLightbox). ------
+// // ------ Add caption display to image from alt attribute according to the code from the library (SimpleLightbox). ------
 
-let gallery = new SimpleLightbox('.gallery a', {
-  captions: true,
-  captionsData: 'alt',
-  captionDelay: 250,
-});
+// let gallery = new SimpleLightbox('.gallery a', {
+//   captions: true,
+//   captionsData: 'alt',
+//   captionDelay: 250,
+// });
